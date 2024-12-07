@@ -22,6 +22,7 @@ Button hoanthanh;
                 Intent i= new Intent(ThankYouActivity.this, MainActivity.class);
                 startActivity(i);
             }
+
         });
     }
 }

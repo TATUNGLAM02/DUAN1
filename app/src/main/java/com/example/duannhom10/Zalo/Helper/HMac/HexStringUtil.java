@@ -14,6 +14,7 @@ public class HexStringUtil {
         for (byte b : raw) {
             int v = b & 0xFF;
             hex[index++] = HEX_CHAR_TABLE[v >>> 4];
+
             hex[index++] = HEX_CHAR_TABLE[v & 0xF];
         }
         return new String(hex);

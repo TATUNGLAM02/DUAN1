@@ -20,6 +20,7 @@ import com.example.duannhom10.R;
 import com.example.duannhom10.model.Product;
 import com.example.duannhom10.ui.MainActivity;
 
+
 public class SettingFragment extends Fragment {
     TextView txtThongbao;
     static TextView txtTongtien;

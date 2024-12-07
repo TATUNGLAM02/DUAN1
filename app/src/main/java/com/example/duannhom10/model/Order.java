@@ -5,6 +5,7 @@ public class Order {
     private String date;
     private String address;
     private double total;
+
     public Order(int orderId, String date, String address, double total) {
         this.orderId = orderId;
         this.date = date;

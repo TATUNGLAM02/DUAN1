@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import java.io.IOException;
 import java.io.InputStream;
 public class Ultils {
+
     //Biến
     public static final String DATABASE_NAME="shop0";
     public static final String ADMIN_ID="id";

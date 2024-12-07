@@ -20,6 +20,7 @@ import java.util.List;
 
 public class CateAdapter  extends RecyclerView.Adapter<CateAdapter.CateViewHolder>{
     ArrayList<Product> lstPro;
+
     Context context;
     CateCallBack cateCallBack;
     public void setCateCallBack(CateCallBack cateCallBack) {

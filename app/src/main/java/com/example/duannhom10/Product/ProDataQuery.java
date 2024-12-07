@@ -12,6 +12,7 @@ import com.example.duannhom10.ui.Ultils;
 import java.util.ArrayList;
 
 public class ProDataQuery {
+
     public static long insert(Context context, Product product){
         DBHelper proDBHelper = new DBHelper(context);
         SQLiteDatabase sqLiteDatabase = proDBHelper.getWritableDatabase();

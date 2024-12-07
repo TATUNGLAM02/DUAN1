@@ -17,6 +17,7 @@ public class Voucher {
         this.voucherProductId = voucherProductId;
     }
 
+
     public void setStart_Date(long start_Date) {
         this.start_Date = start_Date;
     }

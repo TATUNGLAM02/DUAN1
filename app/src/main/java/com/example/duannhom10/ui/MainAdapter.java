@@ -35,6 +35,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         this.itemClickListener = itemClickListener;
         this.originalList = new ArrayList<>(lstPro);
     }
+
     public void setMainCallBack(MainCallBack mainCallBack) {
         this.mainCallBack = mainCallBack;
     }

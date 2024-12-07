@@ -18,6 +18,7 @@ import java.util.List;
 public class LSDHAdapter extends RecyclerView.Adapter<LSDHAdapter.ViewHolder> {
     private Context context;
     private List<Order> orders;
+
     public LSDHAdapter(Context context, List<Order> orders) {
         this.context = context;
         this.orders = orders;

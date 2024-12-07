@@ -23,4 +23,5 @@ public class ThongtinActivity extends AppCompatActivity {
         btnxacnhanthongtin=(Button) findViewById(R.id.btnxacnhapthongtin);
         btntrove=(Button) findViewById(R.id.btntrove);
     }
+
 }

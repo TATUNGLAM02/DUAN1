@@ -27,6 +27,7 @@ public class HMacUtil {
     private static byte[] HMacEncode(final String algorithm, final String key, final String data) {
         Mac macGenerator = null;
         try {
+
             macGenerator = Mac.getInstance(algorithm);
             SecretKeySpec signingKey = new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8), algorithm);
             macGenerator.init(signingKey);
