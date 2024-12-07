@@ -11,6 +11,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 
+
 public class BannerAdapter extends PagerAdapter {
     private Context context;
     List<Integer> listPhoto;

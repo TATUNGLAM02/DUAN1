@@ -7,6 +7,7 @@ public class GioHang implements Serializable {
     public long Giasp;
     public String Hinhsp;
     public int Soluong;
+
     private boolean isDiscountApplied;
     public GioHang(int idsp, String tensp, long giasp, String hinhsp, int soluong) {
         this.idsp = idsp;

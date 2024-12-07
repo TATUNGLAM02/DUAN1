@@ -32,6 +32,7 @@ public class Admin_User_Activity extends AppCompatActivity implements UserAdapte
     ArrayList<user> lstUser;
     UserAdapter userAdapter;
     GridView gridView;
+
     ImageView ivAvatar, ivSelectedAvatar;
     Button btAvatar;
     user us ;

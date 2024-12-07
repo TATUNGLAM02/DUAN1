@@ -17,6 +17,7 @@ import com.example.duannhom10.ui.Ultils;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
     ArrayList<Product> lstPro;
     Context context;

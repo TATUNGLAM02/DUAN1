@@ -104,6 +104,7 @@ public class ChiTietSanPhamActivity extends AppCompatActivity implements MainAda
         startActivity(intent);
     }
 
+
     private void EventButton() {
         btnthemgohang.setOnClickListener(new View.OnClickListener() {
             @Override

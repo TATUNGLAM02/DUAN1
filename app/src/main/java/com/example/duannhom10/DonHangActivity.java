@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class DonHangActivity extends AppCompatActivity {
     EditText edttenkhachhang,edtsodienthoai,edtdiachi,edtemail;
     Button btnxacnhanthongtin, btntrove;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

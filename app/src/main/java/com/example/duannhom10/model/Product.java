@@ -6,6 +6,7 @@ public class Product implements Serializable {
     String proName;
     int proPrice;
     String proImage;
+
     String proDes;
     int categoryID;
     public String getProDes() {

@@ -20,6 +20,7 @@ import java.util.ArrayList;
 public class GiohangAdapter extends BaseAdapter {
     Context context;
     ArrayList<GioHang> arrayListgiohang;
+
     ViewHolder viewHolder=null;
     public GiohangAdapter(Context context, ArrayList<GioHang> arrayListgiohang) {
         this.context = context;

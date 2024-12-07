@@ -6,6 +6,7 @@ public class Voucher {
     private int discount;
     private long start_Date;
     private long end_Date;
+
     private int voucherProductId;
 
     public int getVoucherProductId() {

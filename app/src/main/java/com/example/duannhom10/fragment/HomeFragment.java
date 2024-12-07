@@ -38,6 +38,7 @@ public class HomeFragment extends Fragment {
     private MainAdapter mainAdapter, hotProductAdapter;
     private EditText searchEditText;
     private Handler handler = new Handler();
+
     private ViewPager bannerViewPager;
     private BannerAdapter bannerAdapter;
     private CircleIndicator circleIndicator;

@@ -17,6 +17,7 @@ import com.example.duannhom10.ui.Ultils;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
+
 public class ThanhToanAdapter extends RecyclerView.Adapter<ThanhToanAdapter.ThanhToanViewHolder>{
     ArrayList<GioHang> lstgio;
     Context context;

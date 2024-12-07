@@ -12,6 +12,7 @@ public class AvatarAdapter extends BaseAdapter {
             mContext = context;
             mAvatarIds = avatarIds;
         }
+
         @Override
         public int getCount() {
             return mAvatarIds.length;
