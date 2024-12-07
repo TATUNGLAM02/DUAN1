@@ -29,7 +29,8 @@ import com.example.duannhom10.ui.Ultils;
 
 public class RegisterActivity extends AppCompatActivity {
     Button register, btAvatar;
-    EditText eduserName, edpassword, edphone, edrepassword, edemail;
+    EditText eduserName, edpassword,
+            edphone, edrepassword, edemail;
     ImageView ivAvatar, ivSelectedAvatar,ivSelectAv;
     GridView gridView;
     TextView tvAvatar;

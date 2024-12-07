@@ -20,6 +20,7 @@ public class UserDataQuery {
         cv.put(Ultils.USER_PASS, us.getPassword());
         cv.put(Ultils.USER_EMAIL, us.getEmail());
         cv.put(Ultils.USER_PHONE, us.getPhoneNumber());
+
         cv.put(Ultils.USER_AVATAR, String.valueOf(us.getAvatar()));
         long rs = sqLiteDatabase.insert(Ultils.TABLE_USER, null, cv);
         return (rs);

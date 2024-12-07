@@ -8,6 +8,7 @@
     android:background="@color/white"
     tools:context="Account.LoginActivity"
     >
+
     <ImageView
         android:layout_width="216dp"
         android:layout_height="53dp"

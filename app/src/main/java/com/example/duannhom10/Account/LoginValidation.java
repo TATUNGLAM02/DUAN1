@@ -3,6 +3,7 @@ import com.example.duannhom10.model.user;
 
 public class LoginValidation {
     public boolean correct;
+
     public user curUser;
     public boolean isCorrect() {
         return correct;

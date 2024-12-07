@@ -20,6 +20,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
     Context context;
     UserCallBack userCallBack;
 
+
     public UserAdapter(ArrayList<user> lstuser) {
         this.lstuser = lstuser;
     }

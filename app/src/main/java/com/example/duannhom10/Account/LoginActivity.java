@@ -22,6 +22,7 @@ import com.example.duannhom10.ui.MainActivity;
 public class LoginActivity extends AppCompatActivity {
     Button btLoginC;
     TextView btRegister;
+
     EditText edUserNameC,edPasswordC;
 
     DBHelper db = new DBHelper(LoginActivity.this);
