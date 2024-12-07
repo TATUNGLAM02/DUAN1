@@ -23,6 +23,7 @@ public class SearchResults extends AppCompatActivity {
     private ArrayList<Product> searchResultsList;
     private ImageButton back;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
