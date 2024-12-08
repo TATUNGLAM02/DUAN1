@@ -174,13 +174,13 @@ public class ChiTietSanPhamActivity extends AppCompatActivity implements MainAda
     }
 
     private void Anhxa() {
-        imgchitietsp = findViewById(R.id.imgchitietsp);
-        txttensp = findViewById(R.id.txttensp);
-        txtgiasp = findViewById(R.id.txtgiachitietsp);
-        txtmota = findViewById(R.id.txtmotachitietsp);
-        spinner = findViewById(R.id.spinnerchitietsp);
-        btnthemgohang = findViewById(R.id.btnthemgiohang);
-        toolbarchitiet = findViewById(R.id.toolbarchitietsp);
+        imgchitietsp = findViewById(R.id.imgchitietsp); // Đúng với XML
+        txttensp = findViewById(R.id.txttensp);         // Đúng với XML
+        txtgiasp = findViewById(R.id.txtgiachitietsp);  // Đổi từ txtgiasp -> txtgiachitietsp
+        txtmota = findViewById(R.id.txtmotachitietsp);  // Đúng với XML
+        spinner = findViewById(R.id.spinnerchitietsp); // Đúng với XML
+        btnthemgohang = findViewById(R.id.btnthemgiohang); // Đúng với XML
+        toolbarchitiet = findViewById(R.id.toolbarchitietsp); // Đúng với XML
     }
 
     @Override

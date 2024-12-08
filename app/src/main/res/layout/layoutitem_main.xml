@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp"
-    android:layout_margin="8dp"
-    android:background="@drawable/border_background">
+    android:layout_marginBottom="10dp"
+    android:layout_margin="10dp"
+    >
 
     <ImageView
         android:id="@+id/img_phone"
@@ -31,7 +31,8 @@
         android:layout_marginTop="4dp"
         android:text="Price"
         android:textSize="14sp"
-        android:textColor="#FF5722" />
+        android:textColor="#FF5722"
+        />
     <ImageView
         android:id="@+id/yeuthich"
         android:layout_width="24dp"

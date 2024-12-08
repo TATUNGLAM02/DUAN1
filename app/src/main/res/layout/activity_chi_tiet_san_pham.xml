@@ -36,16 +36,77 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- Color Options -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shape_color"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shape_color2"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shap_color3"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shape_color4"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shape_color5"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/shape_color"
+                    android:src="@drawable/shape_color6"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
 
             <!-- Product Name -->
             <TextView
                 android:id="@+id/txttensp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Sofa SÖDERHAMN"
-                android:textColor="#000000"
-                android:textSize="20sp"
+                android:textColor="#414F44"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <!-- Product Price -->
@@ -53,64 +114,24 @@
                 android:id="@+id/txtgiachitietsp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="6.300.000 VND"
-                android:textColor="#F47936"
+                android:textColor="#414F44"
                 android:textSize="18sp"
                 android:layout_marginTop="8dp" />
 
             <!-- Color Selection -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="16dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Màu sắc: "
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
-
-                <!-- Color Options -->
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
-                    android:background="#C93D3E"
-                    />
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
-                    android:background="#121212"
-                     />
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
-                    android:background="#314238"
-                    app:tint="#F44336" />
-            </LinearLayout>
         </LinearLayout>
 
         <!-- Product Description -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Mô tả"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_margin="16dp"
-            android:textStyle="bold" />
 
         <TextView
+            android:gravity="center"
             android:id="@+id/txtmotachitietsp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nếu bạn thích vẻ ngoài phong cách, thoáng đãng, hãy thử những chiếc ghế sâu, rộng rãi. Bạn có thể kết hợp chiếc ghế sofa SÖDERHAMN của riêng mình để ngồi xuống và thư giãn – một mình hoặc với cả gia đình."
+            android:text="Chất liệu da lộn, kích thước 192x100x80"
             android:textColor="#666666"
             android:textSize="16sp" />
 
