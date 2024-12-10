@@ -8,9 +8,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -22,7 +20,6 @@ import com.example.duannhom10.BannerAdapter;
 import com.example.duannhom10.Product.ChiTietSanPhamActivity;
 import com.example.duannhom10.Product.ProDataQuery;
 import com.example.duannhom10.R;
-import com.example.duannhom10.model.GioHang;
 import com.example.duannhom10.model.Product;
 import com.example.duannhom10.ui.DBHelper;
 import com.example.duannhom10.ui.MainAdapter;
@@ -48,6 +45,7 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        //anh xa
         rvListCode = view.findViewById(R.id.rcv_Phone);
         rcvHotProducts = view.findViewById(R.id.rcv_hot_products);
         searchEditText = view.findViewById(R.id.search_text);
