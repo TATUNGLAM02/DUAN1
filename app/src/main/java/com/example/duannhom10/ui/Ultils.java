@@ -10,7 +10,7 @@ import java.io.InputStream;
 public class Ultils {
 
     //Biến
-    public static final String DATABASE_NAME="shop0";
+    public static final String DATABASE_NAME="shop1";
     public static final String ADMIN_ID="id";
     public static final String ADMIN_PASS="pass";
     public static final String ADMIN_NAME="name";
