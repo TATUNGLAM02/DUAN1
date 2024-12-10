@@ -12,6 +12,10 @@
         android:textSize="24sp"
         android:padding="16dp"/>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"

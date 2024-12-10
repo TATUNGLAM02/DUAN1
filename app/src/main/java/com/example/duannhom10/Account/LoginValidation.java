@@ -1,6 +1,10 @@
 package com.example.duannhom10.Account;
 import com.example.duannhom10.model.user;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 public class LoginValidation {
     public boolean correct;
 

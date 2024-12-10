@@ -19,6 +19,10 @@ import com.example.duannhom10.ui.DBHelper;
 import com.example.duannhom10.ui.MainActivity;
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 public class LoginActivity extends AppCompatActivity {
     Button btLoginC;
     TextView btRegister;

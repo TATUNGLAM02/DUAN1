@@ -26,6 +26,10 @@ public class UserDataQuery {
         return (rs);
     }
     //lay danh sach
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     public static ArrayList<user> getAll(Context context) {
         ArrayList<user> lstUser = new ArrayList<>();
         DBHelper userDBHelper = new DBHelper(context);

@@ -15,6 +15,10 @@ import com.example.duannhom10.model.user;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder>{
     ArrayList<user> lstuser;
     Context context;
@@ -39,7 +43,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         //
         UserViewHolder userViewHolder = new UserViewHolder(proView);
         return userViewHolder;
+<<<<<<< HEAD
 //      Test
+=======
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     }
 
     @Override

@@ -7,7 +7,10 @@
     android:padding="10dp"
     tools:context=".Product.ChiTietSanPhamActivity">
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,15 +23,25 @@
             app:titleTextColor="#020202"
             app:itemIconTint="#4BA8EB"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="?attr/actionBarSize"/>
+=======
+            android:layout_height="?attr/actionBarSize" />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <!-- Product Image -->
         <ImageView
             android:id="@+id/imgchitietsp"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="200dp"
             android:layout_margin="10dp"
             android:scaleType="fitCenter"
+=======
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
             android:src="@mipmap/ic_launcher" />
 
         <!-- Product Details -->
@@ -38,6 +51,7 @@
             android:orientation="vertical"
             android:padding="8dp">
 
+<<<<<<< HEAD
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,6 +112,8 @@
                     android:scaleType="centerCrop"/>
             </LinearLayout>
 
+=======
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
             <!-- Product Name -->
             <TextView
                 android:id="@+id/txttensp"
@@ -119,6 +135,7 @@
                 android:textColor="#414F44"
                 android:textSize="18sp"
                 android:layout_marginTop="8dp" />
+<<<<<<< HEAD
 
             <!-- Color Selection -->
 
@@ -134,6 +151,40 @@
             android:text="Chất liệu da lộn, kích thước 192x100x80"
             android:textColor="#666666"
             android:textSize="16sp" />
+=======
+        </LinearLayout>
+
+        <!-- Product Description Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Description Title -->
+            <TextView
+                android:id="@+id/txtdesctitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm"
+                android:textColor="#414F44"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Description Content -->
+            <TextView
+                android:id="@+id/txtmotachitietsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chất liệu da lộn, kích thước 192x100x80. \n\nĐèn trần: Được gắn trên trần nhà, thường dùng để chiếu sáng toàn bộ phòng. Có thể là đèn chùm, đèn âm trần hoặc đèn LED. \n\nĐèn bàn: Thường được đặt trên bàn làm việc hoặc bàn học, cung cấp ánh sáng tập trung cho các hoạt động cần sự tập trung cao."
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="16dp"
+                />
+        </LinearLayout>
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <!-- Spinner for Quantity -->
         <androidx.appcompat.widget.AppCompatSpinner
@@ -141,12 +192,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+<<<<<<< HEAD
             android:layout_marginTop="5dp"
             android:background="@drawable/spinner"
             android:padding="15dp"
             android:gravity="center"
             android:layout_gravity="center"
             android:textAlignment="center" />
+=======
+            android:background="@drawable/spinner"
+            android:padding="15dp"
+            android:gravity="center" />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <!-- Add to Cart Button -->
         <Button
@@ -167,7 +224,11 @@
             android:textSize="20sp"
             android:textColor="#333333"
             android:layout_margin="16dp"
+<<<<<<< HEAD
             android:textStyle="bold"/>
+=======
+            android:textStyle="bold" />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <!-- RecyclerView for Product List -->
         <androidx.recyclerview.widget.RecyclerView
@@ -176,6 +237,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:padding="8dp"
+<<<<<<< HEAD
             android:nestedScrollingEnabled="true"/>
+=======
+            android:nestedScrollingEnabled="true" />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

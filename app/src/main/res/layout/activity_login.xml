@@ -9,6 +9,10 @@
     tools:context="Account.LoginActivity"
     >
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     <ImageView
         android:layout_width="216dp"
         android:layout_height="53dp"

@@ -174,6 +174,7 @@
         android:backgroundTint="#414F44"
         android:layout_margin="16dp"
         android:textSize="16sp"/>
+<<<<<<< HEAD
     <Button
         android:id="@+id/payment_confirm_zalo"
         android:layout_width="match_parent"
@@ -182,4 +183,7 @@
         android:backgroundTint="#414F44"
         android:layout_margin="16dp"
         android:textSize="16sp"/>
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 </LinearLayout>

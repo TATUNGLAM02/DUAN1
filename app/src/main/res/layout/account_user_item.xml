@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:textStyle="bold"
+<<<<<<< HEAD
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="16dp"
@@ -35,37 +36,73 @@
             android:ellipsize="end"
             android:clickable="false"
             android:focusable="false"/>
+=======
+            android:textSize="16sp"
+        android:textColor="#003366"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:clickable="false"
+        android:focusable="false"/>
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <TextView
             android:id="@+id/tvPassword1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pass"
+<<<<<<< HEAD
             android:textColor="@color/black"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:textSize="20sp" />
+=======
+            android:textColor="#003366"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"  />
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
         <TextView
             android:id="@+id/tvEmail1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email"
+<<<<<<< HEAD
             android:textColor="@color/black"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:textSize="20sp" />
+=======
+            android:textColor="#003366"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"  />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
         <TextView
             android:id="@+id/tvPhone1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Số điện thoại"
+<<<<<<< HEAD
             android:textColor="@color/black"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:textSize="20sp" />
+=======
+            android:textColor="#003366"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"  />
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 
         <ImageView
             android:id="@+id/ivEdit"

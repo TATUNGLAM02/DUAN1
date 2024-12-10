@@ -16,10 +16,17 @@ import com.example.duannhom10.model.user;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+=======
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+import java.util.Locale;
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 public class DBHelper extends SQLiteOpenHelper {
     private static final String NBTKSHOP = Ultils.DATABASE_NAME;
     private static final int DATABASE_VERSION = 26;
@@ -307,6 +314,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
         return productList;
     }
+<<<<<<< HEAD
         // Phương thức để thêm đơn hàng mới và chi tiết đơn hàng vào cơ sở dữ liệu
         public long addOrderWithDetails(String username, ArrayList<GioHang> cartItems,String Address) {
             SQLiteDatabase db = this.getWritableDatabase();
@@ -339,6 +347,40 @@ public class DBHelper extends SQLiteOpenHelper {
             db.close();
             return orderId; // Trả về ID của đơn hàng mới được thêm hoặc -1 nếu có lỗi
         }
+=======
+    // Phương thức để thêm đơn hàng mới và chi tiết đơn hàng vào cơ sở dữ liệu
+    public long addOrderWithDetails(String username, ArrayList<GioHang> cartItems,String Address) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Thêm dữ liệu vào bảng order
+        ContentValues orderValues = new ContentValues();
+        orderValues.put(Ultils.ORDER_DATE, getCurrentDateTime());
+        orderValues.put(Ultils.ORDER_STATUS, "Thành công");
+        orderValues.put(Ultils.ORDER_ADDRESS,Address );
+        orderValues.put(Ultils.ORDER_TOTAL, calculateTotal(cartItems));
+        orderValues.put(Ultils.USER_NAME, username);
+        long orderId = db.insert(Ultils.TABLE_ORDER, null, orderValues);
+
+        // Log thông tin đơn hàng sau khi thêm
+        if (orderId != -1) {
+            logOrderInfo(db, orderId);  // Gọi phương thức logOrderInfo
+
+            for (GioHang item : cartItems) {
+                ContentValues detailValues = new ContentValues();
+                detailValues.put(Ultils.ORDER_ID, orderId);
+                detailValues.put(Ultils.PRODUCT_ID, item.getIdsp());
+                detailValues.put(Ultils.QUANTITY, item.getSoluong());
+                detailValues.put(Ultils.PRICE, item.getGiasp());
+                long detailId = db.insert(Ultils.TABLE_ORDER_DETAIL, null, detailValues);
+                // Log thông tin chi tiết đơn hàng sau khi thêm
+                if (detailId != -1) {
+                    logOrderDetailInfo(db, orderId);  // Gọi phương thức logOrderDetailInfo
+                }
+            }
+        }
+        db.close();
+        return orderId; // Trả về ID của đơn hàng mới được thêm hoặc -1 nếu có lỗi
+    }
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     private String getCurrentDateTime() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
         Date date = new Date();
@@ -353,6 +395,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
     private void logOrderInfo(SQLiteDatabase db, long orderId) {
         Cursor cursor = db.query(Ultils.TABLE_ORDER, null, Ultils.ORDER_ID + " = ?",
+<<<<<<< HEAD
                 new String[] { String.valueOf(orderId) }, null, null, null);
         if (cursor != null && cursor.moveToFirst()) {
             int idIndex = cursor.getColumnIndex(Ultils.ORDER_ID);
@@ -402,6 +445,55 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+=======
+                new String[]{String.valueOf(orderId)}, null, null, null);
+        if (cursor != null) {
+            try {
+                if (cursor.moveToFirst()) {
+                    Log.d("DBLog", "Các cột trong Cursor: " + Arrays.toString(cursor.getColumnNames()));
+                    do {
+                        String orderInfo = "Order ID: " + cursor.getInt(cursor.getColumnIndexOrThrow(Ultils.ORDER_ID)) +
+                                ", Date: " + cursor.getString(cursor.getColumnIndexOrThrow(Ultils.ORDER_DATE)) +
+                                ", Status: " + cursor.getString(cursor.getColumnIndexOrThrow(Ultils.ORDER_STATUS)) +
+                                ", Total: " + cursor.getDouble(cursor.getColumnIndexOrThrow(Ultils.ORDER_TOTAL)) +
+                                ", Username: " + cursor.getString(cursor.getColumnIndexOrThrow(Ultils.USER_NAME));
+                        Log.d("DBLog", orderInfo);
+                    } while (cursor.moveToNext());
+                } else {
+                    Log.d("DBLog", "Không có dữ liệu trong bảng Orders cho Order ID: " + orderId);
+                }
+            } finally {
+                cursor.close();
+            }
+        }
+    }
+
+    private void logOrderDetailInfo(SQLiteDatabase db, long orderId) {
+        Cursor cursor = db.query(Ultils.TABLE_ORDER_DETAIL, null, Ultils.ORDER_ID + " = ?",
+                new String[]{String.valueOf(orderId)}, null, null, null);
+        if (cursor != null) {
+            try {
+                if (cursor.moveToFirst()) {
+                    Log.d("DBLog", "Các cột trong Cursor: " + Arrays.toString(cursor.getColumnNames()));
+                    do {
+                        String detailInfo = "Order Detail ID: " + cursor.getInt(cursor.getColumnIndexOrThrow(Ultils.ORDER_DETAIL_ID)) +
+                                ", Order ID: " + orderId +
+                                ", Product ID: " + cursor.getInt(cursor.getColumnIndexOrThrow(Ultils.PRODUCT_ID)) +
+                                ", Quantity: " + cursor.getInt(cursor.getColumnIndexOrThrow(Ultils.QUANTITY)) +
+                                ", Price: " + cursor.getDouble(cursor.getColumnIndexOrThrow(Ultils.PRICE));
+                        Log.d("DBLog", detailInfo);
+                    } while (cursor.moveToNext());
+                } else {
+                    Log.d("DBLog", "Không có dữ liệu trong bảng OrderDetail cho Order ID: " + orderId);
+                }
+            } finally {
+                cursor.close();
+            }
+        }
+    }
+
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     public ArrayList<Product> searchProducts(String query) {
         ArrayList<Product> productList = new ArrayList<>();
         // Get readable database
@@ -439,6 +531,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return productList;
     }
     // Phương thức để lấy danh sách đơn hàng dựa trên tên người dùng
+<<<<<<< HEAD
     public List<Order> getOrdersByUsername(String username) {
         List<Order> orders = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
@@ -474,5 +567,44 @@ public class DBHelper extends SQLiteOpenHelper {
         return orders;
     }
 
+=======
+
+    public List<Order> getAllOrders() {
+        List<Order> orderList = new ArrayList<>();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = null;
+
+        try {
+            String query = "SELECT * FROM orders"; // Truy vấn lấy tất cả các dòng từ bảng orders
+            cursor = db.rawQuery(query, null);
+
+            if (cursor != null && cursor.moveToFirst()) {
+                do {
+                    int orderId = cursor.getInt(cursor.getColumnIndexOrThrow("orderid"));
+                    String date = cursor.getString(cursor.getColumnIndexOrThrow("date"));
+                    String status = cursor.getString(cursor.getColumnIndexOrThrow("status"));
+                    double total = cursor.getDouble(cursor.getColumnIndexOrThrow("total"));
+                    String address = cursor.getString(cursor.getColumnIndexOrThrow("address"));
+                    String name = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+
+                    Order order = new Order(orderId, date, status, total, address, name);
+                    orderList.add(order);
+                } while (cursor.moveToNext());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+        }
+
+        return orderList;
+    }
+
+
+
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 }
 

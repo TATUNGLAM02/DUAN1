@@ -8,6 +8,10 @@
     android:orientation="vertical"
     tools:context="Account.RegisterActivity">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     <ImageButton
         android:id="@+id/ibReg"
         android:layout_width="48dp"

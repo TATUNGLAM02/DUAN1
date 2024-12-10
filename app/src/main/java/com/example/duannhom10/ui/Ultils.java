@@ -10,7 +10,11 @@ import java.io.InputStream;
 public class Ultils {
 
     //Biến
+<<<<<<< HEAD
     public static final String DATABASE_NAME="shop0";
+=======
+    public static final String DATABASE_NAME="shop1";
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     public static final String ADMIN_ID="id";
     public static final String ADMIN_PASS="pass";
     public static final String ADMIN_NAME="name";

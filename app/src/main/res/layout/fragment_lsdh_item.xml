@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -125,3 +126,55 @@
         android:src="@drawable/baseline_fingerprint"/>
 
 </LinearLayout>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/orderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn hàng"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/orderDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt hàng"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/orderTOTAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/orderADDRESS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/orderSTATUS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái: Thành công"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/orderNAME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên người đặt: Nguyễn Văn A"
+        android:padding="8dp" />
+
+
+</LinearLayout>
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417

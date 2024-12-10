@@ -9,6 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duannhom10.ui.MainActivity;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
 public class ThankYouActivity extends AppCompatActivity {
 Button hoanthanh;
     @Override

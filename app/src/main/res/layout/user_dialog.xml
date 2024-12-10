@@ -8,6 +8,10 @@
     android:padding="20dp">
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5fc002c472a9b4cb5f126ad5dfa85d4ab4d14417
     <TextView
         android:id="@+id/tvEdit"
         android:layout_width="267dp"
