@@ -39,6 +39,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserViewHolder
         //
         UserViewHolder userViewHolder = new UserViewHolder(proView);
         return userViewHolder;
+//      Test
     }
 
     @Override
