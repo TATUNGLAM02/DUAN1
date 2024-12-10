@@ -48,8 +48,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         mcontext = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(mcontext);
         //nạp layout cho View biểu diễn phần tử user
-        View proView= inflater.inflate(R.layout.layoutitem_main, parent, false);
-        MainViewHolder mainViewHolder = new MainViewHolder(proView);
+        MainViewHolder mainViewHolder = new MainViewHolder(inflater.inflate(R.layout.layoutitem_main, parent, false));
         return mainViewHolder;
     }
     @Override
