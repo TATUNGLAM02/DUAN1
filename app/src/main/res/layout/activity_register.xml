@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context="Account.RegisterActivity">
 
+
     <ImageButton
         android:id="@+id/ibReg"
         android:layout_width="48dp"

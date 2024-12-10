@@ -26,6 +26,7 @@ public class UserDataQuery {
         return (rs);
     }
     //lay danh sach
+
     public static ArrayList<user> getAll(Context context) {
         ArrayList<user> lstUser = new ArrayList<>();
         DBHelper userDBHelper = new DBHelper(context);

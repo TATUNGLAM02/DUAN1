@@ -27,6 +27,7 @@ import com.example.duannhom10.model.user;
 import com.example.duannhom10.ui.DBHelper;
 import com.example.duannhom10.ui.Ultils;
 
+
 public class RegisterActivity extends AppCompatActivity {
     Button register, btAvatar;
     EditText eduserName, edpassword,
