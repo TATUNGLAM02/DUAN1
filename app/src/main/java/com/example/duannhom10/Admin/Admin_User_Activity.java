@@ -40,6 +40,7 @@ public class Admin_User_Activity extends AppCompatActivity implements UserAdapte
     private AlertDialog.Builder builder;
     private AlertDialog dialog; // Khai báo biến dialog là biến toàn cục
     public static int selectedAvatar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

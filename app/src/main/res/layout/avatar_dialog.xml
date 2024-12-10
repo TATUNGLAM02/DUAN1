@@ -12,6 +12,7 @@
         android:textSize="24sp"
         android:padding="16dp"/>
 
+
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"

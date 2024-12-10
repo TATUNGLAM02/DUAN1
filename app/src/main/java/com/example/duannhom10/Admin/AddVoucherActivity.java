@@ -16,6 +16,7 @@ import com.example.duannhom10.R;
 
 import com.example.duannhom10.ui.DBHelper;
 import com.example.duannhom10.ui.Ultils;
+
 public class AddVoucherActivity extends AppCompatActivity {
     private EditText editTextVoucherCode, editTextVoucherDiscount, editTextVoucherProductId,
             editTextVoucherStartDate, editTextVoucherEndDate;

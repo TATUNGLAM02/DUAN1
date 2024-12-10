@@ -31,6 +31,7 @@
 
 
 
+
     public class InfoFragment extends Fragment implements UserAccountAdapter.UserAccountCallBack {
         ArrayList<user> lstuser;
         private boolean hasSelectedAvatar = false;

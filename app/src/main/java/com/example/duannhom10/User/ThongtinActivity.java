@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.duannhom10.R;
 
+
 public class ThongtinActivity extends AppCompatActivity {
     EditText edttenkhachhang,edtsodienthoai,edtdiachi,edtemail;
     Button btnxacnhanthongtin, btntrove;
